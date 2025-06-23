@@ -61,3 +61,39 @@ This project includes building and training a neural network for digit classific
 4. Commit and push your changes to the fork
 
 5. OPTIONAL - Create a pull request if you want the main repository to change the code with what you changed
+
+## How it works 
+#### 1. Inputs go in
+   - Each image is a grayscale grid with 28x28 pixels
+   - Pixel values are scaled between 0 and 1
+
+#### 2. The neurons do math 
+   - The first layer of input neurons flatten the 28x28 image into 784 numbers
+   - The second layer has 128 neurons using ReLU activation (ReLU activation essentially cuts off negative signals and passes through positive ones)
+     - Each neuron takes all 784 inputs, does math, and keeps only positive results
+     - ReLU activation article - https://builtin.com/machine-learning/relu-activation-function
+   - The third layer of 10 neurons (Digits 0-10) uses Softmax (Adds up probabilities to 1)
+     - Outputs 10 probabilities that add up to 1
+
+#### 3. It guesses an answer 
+   - The number with the highest confidence is the answer
+
+#### 4. It checks the answer
+   - The model compares its guess to the real number
+
+#### 5. It then changes its math to be more accurate
+
+#### 6. It does this loop 5 times 
+
+#### 7. It tests it's skills on the test set
+   - 10,000 images it hasn't seen before
+   - Prints out it's accuracy on the test set
+
+#### 8. It shows predictions with confidence
+   - It picks one random image for digits 1-9
+   - It guesses each one and shows the confidence with it
+
+#### 9. The program outputs a bar graph for how confident the model was for each digit 
+
+## Known issues 
+- It trains on digits 0-9, but ouputs digits 1-9 to make it a 3x3 grid (which looks better)
