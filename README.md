@@ -1,5 +1,5 @@
 # MNIST Digit Identifier Neural Netowork
-## A fully functional python neural network using TensorFlow/Keras that learns how to identify handwritten digits from the MNIST database.
+## A fully functional python neural network built using TensorFlow/Keras that learns how to identify handwritten digits from the MNIST database.
 This project includes building and training a neural network for digit classification using TensorFlow and Karas, along with visualizing the data using matplotlib. This project:
 - Loads the MNIST database of 28x28 images
 - Builds a feedforward (one direction) neural network with 784 input neurons, 128 hidden neurons (all in one hidden layerr), and 10 output neurons
