@@ -19,20 +19,20 @@ This project includes building and training a neural network for digit classific
    - Open command prompt/terminal and type "git clone https://github.com/Supposeduck30/mnist-digit-identifier-neural-network.git"
 
 2. Now move into it
-   - "cd mnist-digit-identifier-neural-network"
+   - cd mnist-digit-identifier-neural-network
 
 3. Create the virtual environment
-   - "python -m venv venv"
+   - python -m venv venv
 
 4. Activate the virtual environment
    - On Windows, the command is "venv\Scripts\activate"
    - On macOS or Linux, the command is "source venv/bin/activate"
 
 5. Install the required packages
-   - "pip install tensorflow matplotlib numpy" (It may take a while to install everything)
+   - pip install tensorflow matplotlib numpy (It may take a while to install everything)
 
 6. Run the project
-   - "python mnist_neural_network.py"
+   - python mnist_neural_network.py
 
 ### IDE method 
 1. Open your IDE and create a new project/folder
