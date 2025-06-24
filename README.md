@@ -12,6 +12,13 @@ This project includes building and training a neural network for digit classific
 
 ## 🕓 Version history
 ### 1.0.0
+- Runs for 5 epochs
+- Prints the loss and accuracy every epoch
+- Outputs it's final accuracy on the test set
+- Outputs a prediction for digits 1-9 in a 3x3 grid with a percentage of confidence
+- Plots the most confident and least confident digits in a bar graph
+
+
 ## 💻 How to run 
 ### Prerequisites for download
 - Python 3.10 or 3.11 installed
