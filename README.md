@@ -10,6 +10,8 @@ This project includes building and training a neural network for digit classific
 - Plots a bar chart showing confidence for each digit
 - Shows a prediction for a random sample of each digit (1-9) and shows confidence
 
+## 🕓 Version history
+### 1.0.0
 ## 💻 How to run 
 ### Prerequisites for download
 - Python 3.10 or 3.11 installed
