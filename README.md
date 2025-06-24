@@ -97,6 +97,7 @@ This project includes building and training a neural network for digit classific
 
 #### 9. The program outputs a bar graph for how confident the model was for each digit 
 
+## Screenshots
 #### ![image](https://github.com/user-attachments/assets/a1b83671-7019-488a-ad48-bafa4438cf46)
 #### ![image](https://github.com/user-attachments/assets/dd3ac692-8913-40a5-b308-c888910e858a)
 #### ![image](https://github.com/user-attachments/assets/0f5d2673-f78c-4573-bbfc-a35c1f771993)
