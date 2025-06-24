@@ -10,7 +10,7 @@ This project includes building and training a neural network for digit classific
 - Plots a bar chart showing confidence for each digit
 - Shows a prediction for a random sample of each digit (1-9) and shows confidence
 
-## How to run 
+## 💻 How to run 
 ### Prerequisites for download
 - Python 3.10 or 3.11 installed
 - Git installed
@@ -51,7 +51,7 @@ This project includes building and training a neural network for digit classific
 
 6. Run it
 
-## How to tweak the project for your own uses 
+## 🔧 How to tweak the project for your own uses 
 1. Fork the repository
 
 2. Clone the fork
@@ -62,7 +62,7 @@ This project includes building and training a neural network for digit classific
 
 5. OPTIONAL - Create a pull request if you want the main repository to change the code with what you changed
 
-## How it works 
+## 🧠 How it works 
 #### 1. Inputs go in
    - Each image is a grayscale grid with 28x28 pixels
    - Pixel values are scaled between 0 and 1
@@ -99,5 +99,5 @@ This project includes building and training a neural network for digit classific
 #### ![image](https://github.com/user-attachments/assets/dd3ac692-8913-40a5-b308-c888910e858a)
 #### ![image](https://github.com/user-attachments/assets/0f5d2673-f78c-4573-bbfc-a35c1f771993)
 
-## Known issues 
+## ⚠️ Known issues 
 - It trains on digits 0-9, but ouputs digits 1-9 to make it a 3x3 grid (which looks better)
