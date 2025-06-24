@@ -12,6 +12,7 @@ This project includes building and training a neural network for digit classific
 
 ## 🕓 Version history
 ### 1.0.0
+- Terminal based
 - Runs for 5 epochs
 - Prints the loss and accuracy every epoch
 - Outputs it's final accuracy on the test set
