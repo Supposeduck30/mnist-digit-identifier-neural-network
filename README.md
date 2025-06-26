@@ -20,7 +20,7 @@ This project includes building and training a neural network for digit classific
 - Plots the most confident and least confident digits in a bar graph
 
 ### 1.0.1 
-- Plots the confidence for digits 0-9 in the test set overall rather than plotting the confidence for 1 sample of each digit
+- Plots the confidence in a bar graph for digits 0-9 in the test set overall rather than plotting the confidence for 1 sample of each digit
 
 ## 💻 How to run 
 ### Prerequisites for download
