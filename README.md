@@ -19,6 +19,8 @@ This project includes building and training a neural network for digit classific
 - Outputs a prediction for digits 1-9 in a 3x3 grid with a percentage of confidence
 - Plots the most confident and least confident digits in a bar graph
 
+### 1.0.1 
+- Plots the confidence for digits 0-9 in the test set overall rather than plotting the confidence for 1 sample of each digit
 
 ## 💻 How to run 
 ### Prerequisites for download
