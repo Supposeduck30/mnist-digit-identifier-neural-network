@@ -39,16 +39,16 @@ for digit in range(1, 10):
     images.append(x_test[random_idx])
     labels.append(y_test[random_idx])
 
-# Predict
+# Predict on those 9 images
 images_np = np.array(images)
 predictions = model.predict(images_np)
 
 # Plot grid with color-coded confidence
-plt.figure(figsize=(9,9))
+plt.figure(figsize=(9, 9))
 confidences = []
 
 for i in range(9):
-    plt.subplot(3,3,i+1)
+    plt.subplot(3, 3, i + 1)
     plt.imshow(images[i], cmap='gray')
     plt.axis('off')
 
@@ -71,20 +71,30 @@ plt.subplots_adjust(top=0.88)
 plt.suptitle("Model predictions on digits 1–9 with confidence %", fontsize=16, y=0.98)
 plt.show()
 
-# Plot bar chart of confidence
-lowest_idx = np.argmin(confidences)
+# New: Plot average model confidence for true class on all test images (digits 0–9)
+pred_test = model.predict(x_test, verbose=0)  # shape: (10000, 10)
+
+# Calculate average confidence the model assigns to the correct label for each digit
+avg_conf = [
+    np.mean(pred_test[y_test == d, d]) * 100
+    for d in range(10)
+]
+
+# Plot bar chart of average confidence per digit
+lowest_idx = int(np.argmin(avg_conf))
 
 plt.figure(figsize=(10, 4))
-bars = plt.bar(range(1, 10), confidences, color='skyblue')
-bars[lowest_idx].set_color('red')
+bars = plt.bar(range(10), avg_conf, color='skyblue')
+bars[lowest_idx].set_color('red')  # Highlight the lowest-confidence digit
 
-for i, c in enumerate(confidences):
-    plt.text(i+1, c + 1, f"{c:.1f}%", ha='center', fontsize=9)
+# Add labels
+for i, c in enumerate(avg_conf):
+    plt.text(i, c + 1, f"{c:.1f}%", ha='center', fontsize=9)
 
-plt.xticks(range(1, 10))
+plt.xticks(range(10))
 plt.ylim(0, 105)
 plt.xlabel("Digit")
-plt.ylabel("Confidence (%)")
-plt.title("Prediction Confidence for Digits 1–9 (lowest in red)")
+plt.ylabel("Average confidence (%)")
+plt.title("Average Model Confidence per Digit on the Full MNIST Test Set\n(red = lowest)")
 plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.show()
