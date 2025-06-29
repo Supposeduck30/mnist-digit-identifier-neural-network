@@ -113,5 +113,5 @@ This project includes building and training a neural network for digit classific
 ### ![image](https://github.com/user-attachments/assets/cc7e7be2-ff1b-4605-af78-a5b1d08f429c)
 
 
-## ⚠️ Known issues 
+## ⚠️ Warnings/Known issues 
 - It trains on digits 0-9, but ouputs digits 1-9 to make it a 3x3 grid (which looks better)
